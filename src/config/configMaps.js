@@ -57,18 +57,18 @@ export const search = {
 // coordinates are still accessible in the HTTP requests and the
 // Redux store.
 export const fuzzy = {
-  enabled: false,
+  enabled: true,
 
   // Amount of maximum offset in meters that is applied to obfuscate
   // the original coordinates. The actual value is random, but the
   // obfuscated coordinates are withing a circle that has the same
   // radius as the offset.
-  offset: 500,
+  offset: 1500,
 
   // Default zoom level when showing a single circle on a Map. Should
   // be small enough so the whole circle fits in.
-  defaultZoomLevel: 13,
+  defaultZoomLevel: 12,
 
   // Color of the circle on the Map component.
-  circleColor: '#c0392b',
+  circleColor: '#ff6852',
 };
