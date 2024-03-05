@@ -93,12 +93,6 @@ export const SocialLoginButtonsMaybe = props => {
 
   return showSocialLogins ? (
     <div className={css.idpButtons}>
-      <div className={css.socialButtonsOr}>
-        <span className={css.socialButtonsOrText}>
-          <FormattedMessage id="AuthenticationPage.or" />
-        </span>
-      </div>
-
       {showFacebookLogin ? (
         <div className={css.socialButtonWrapper}>
           <SocialLoginButton onClick={() => authWithFacebook()}>
@@ -124,6 +118,12 @@ export const SocialLoginButtonsMaybe = props => {
           </SocialLoginButton>
         </div>
       ) : null}
+
+      <div className={css.socialButtonsOr}>
+        <span className={css.socialButtonsOrText}>
+          <FormattedMessage id="AuthenticationPage.or" />
+        </span>
+      </div>
     </div>
   ) : null;
 };
@@ -213,6 +213,13 @@ export const AuthenticationForms = props => {
       <LinkTabNavHorizontal className={css.tabs} tabs={tabs} />
       {loginOrSignupError}
 
+      <SocialLoginButtonsMaybe
+        isLogin={isLogin}
+        showFacebookLogin={showFacebookLogin}
+        showGoogleLogin={showGoogleLogin}
+        from={from}
+      />
+
       {isLogin ? (
         <LoginForm className={css.loginForm} onSubmit={submitLogin} inProgress={authInProgress} />
       ) : (
@@ -223,13 +230,6 @@ export const AuthenticationForms = props => {
           termsAndConditions={termsAndConditions}
         />
       )}
-
-      <SocialLoginButtonsMaybe
-        isLogin={isLogin}
-        showFacebookLogin={showFacebookLogin}
-        showGoogleLogin={showGoogleLogin}
-        from={from}
-      />
     </div>
   );
 };
