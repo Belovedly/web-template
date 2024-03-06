@@ -31,6 +31,7 @@
 .tabs {
   @media (--viewportMedium) {
     margin-top: 6px;
+    margin-bottom: 30px;
   }
 }
 
@@ -68,7 +69,6 @@
 
   @media (--viewportMedium) {
     flex-basis: 330px;
-    margin-top: 30px;
     padding-top: 2px;
   }
 }
@@ -86,7 +86,6 @@
 
   @media (--viewportMedium) {
     flex-basis: 410px;
-    margin-top: 30px;
     padding-top: 2px;
   }
 }
