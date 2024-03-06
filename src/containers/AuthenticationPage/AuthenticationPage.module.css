@@ -69,6 +69,7 @@
 
   @media (--viewportMedium) {
     flex-basis: 330px;
+    margin-top: 30px;
     padding-top: 2px;
   }
 }
@@ -86,6 +87,7 @@
 
   @media (--viewportMedium) {
     flex-basis: 410px;
+    margin-top: 30px;
     padding-top: 2px;
   }
 }
@@ -241,7 +243,7 @@
 @media (--viewportMedium) {
   .socialButtonsOr {
     height: 34px;
-    margin: 15px 0;
+    margin: 45px 0 15px 0;
   }
 }
 
