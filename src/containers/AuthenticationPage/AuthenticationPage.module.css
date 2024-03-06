@@ -29,6 +29,8 @@
 /* ================ Tabs & Form ================ */
 
 .tabs {
+  margin-bottom: 24px;
+
   @media (--viewportMedium) {
     margin-top: 6px;
     margin-bottom: 30px;
@@ -224,7 +226,7 @@
 .socialButtonsOr {
   width: 100%;
   height: 32px;
-  margin: 28px 0 20px 0;
+  margin: 36px 0 12px 0;
   text-align: center;
   position: relative;
   background-color: var(--colorWhite);
