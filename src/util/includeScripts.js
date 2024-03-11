@@ -41,7 +41,7 @@ export const IncludeScripts = props => {
     mapLibraries.push(
       <link
         key="mapbox_GL_CSS"
-        href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+        href="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css"
         rel="stylesheet"
         crossOrigin
       />
@@ -51,7 +51,7 @@ export const IncludeScripts = props => {
       <script
         id={MAPBOX_SCRIPT_ID}
         key="mapbox_GL_JS"
-        src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"
+        src="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"
         crossOrigin
       ></script>
     );
